@@ -1,10 +1,11 @@
 import Vue from "vue";
-import App from "./App";
+import App from "./App.vue";
 import store from "../store";
 import router from "./router";
 
-global.browser = require("webextension-polyfill");
-Vue.prototype.$browser = global.browser;
+// TODO: enable polyfills
+// global.navigator = require("webextension-polyfill");
+// Vue.prototype.$browser = global.navigator;
 
 /* eslint-disable no-new */
 new Vue({
