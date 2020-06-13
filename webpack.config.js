@@ -3,8 +3,8 @@ const ejs = require("ejs");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 const ExtensionReloader = require("webpack-extension-reloader");
-const {VueLoaderPlugin} = require("vue-loader");
-const {version} = require("./package.json");
+const { VueLoaderPlugin } = require("vue-loader");
+const { version } = require("./package.json");
 
 const config = {
   mode: process.env.NODE_ENV,
@@ -84,9 +84,9 @@ const config = {
       filename: "[name].css"
     }),
     new CopyPlugin([
-      {from: "icons", to: "icons", ignore: ["icon.xcf"]},
-      {from: "popup/popup.html", to: "popup/popup.html", transform: transformHtml},
-      {from: "options/options.html", to: "options/options.html", transform: transformHtml},
+      { from: "icons", to: "icons", ignore: ["icon.xcf"] },
+      { from: "popup/popup.html", to: "popup/popup.html", transform: transformHtml },
+      { from: "options/options.html", to: "options/options.html", transform: transformHtml },
       {
         from: "manifest.json",
         to: "manifest.json",
