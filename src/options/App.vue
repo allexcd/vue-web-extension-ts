@@ -5,13 +5,11 @@
 </template>
 
 <script lang="ts">
-  export default {
-    name: "App"
-  };
+export default {
+  name: "App"
+};
 </script>
 
-<style scoped>
-  p {
-    font-size: 20px;
-  }
+<style lang="scss" scoped>
+@import "./App.scss";
 </style>

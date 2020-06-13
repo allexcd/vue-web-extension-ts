@@ -5,9 +5,9 @@
 </template>
 
 <script lang="ts">
-  export default {
-    data() {
-      return {};
-    }
-  };
+export default {
+  data() {
+    return {};
+  }
+};
 </script>
